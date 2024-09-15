@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.microservices</groupId>
-	<artifactId>order-service</artifactId>
+	<artifactId>invetory-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>order-service</name>
-	<description>Order Microservice</description>
+	<name>invetory-service</name>
+	<description>Invetory Service</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -76,11 +76,6 @@
 			<groupId>org.testcontainers</groupId>
 			<artifactId>mysql</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>rest-assured</artifactId>
-			<scope>5.3.2</scope>
 		</dependency>
 	</dependencies>
 
