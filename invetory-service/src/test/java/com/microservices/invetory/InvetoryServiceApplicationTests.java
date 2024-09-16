@@ -18,7 +18,7 @@ import io.restassured.RestAssured;
 class InvetoryServiceApplicationTests {
 
 	@ServiceConnection
-	static MySQLContainer<?> mysqlContainer = new MySQLContainer<>("mysql:8.3.0");
+	static MySQLContainer mysqlContainer = new MySQLContainer("mysql:8.3.0");
 
 	@LocalServerPort
 	private int port;
