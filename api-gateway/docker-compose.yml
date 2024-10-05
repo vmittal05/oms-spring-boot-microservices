@@ -15,12 +15,12 @@ services:
     image: quay.io/keycloak/keycloak:24.0.1
     command: [ "start-dev", "--import-realm" ]
     environment:
-      DB: MYSQL
-      DB_URL_HOST: mysql
-      DB_SCHEMA: mysql
+      # DB_VENDOR: MYSQL
+      KC_DB: mysql
       # DB_DATABASE: keycloak
-      DB_USERNAME: keycloak
-      DB_PASSWORD: password
+      KC_DB_URL: jdbc:mysql://keycloak-mysql:3306/keycloak
+      KC_DB_USERNAME: keycloak
+      KC_DB_PASSWORD: password
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
     ports:
